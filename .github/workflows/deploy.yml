@@ -30,4 +30,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: ./
+        with:
+          command : npm run preview
+          
