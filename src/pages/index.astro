@@ -1,13 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Languages, Lightbulb, Code2, Contact, Brain } from "lucide-astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Ahmed Farooq">
     <section class="grid grid-cols-12 h-screen">
         <div
-            class="col-start-2 gap-6 flex flex-col justify-start my-8 items-center col-end-12"
+            class="col-start-2 gap-2 flex flex-col justify-start mt-8 items-center col-end-12"
         >
-            <img src="/me.png" class="w-[300px] my-6 object-cover h-[300px]" />
+            <img src="/me.svg" class="w-[300px] my-6 object-cover h-[300px]" />
             <h1
                 class="text-5xl lg:text-5xl font-medium font-[Poppins] capitalize"
             >
@@ -44,7 +45,269 @@ import Layout from "../layouts/Layout.astro";
                 </a>
             </p>
         </div>
+
+        <div
+            class="lg:col-start-3 col-start-2 col-end-12  lg:block lg:col-end-11"
+        >
+            <ol class="w-full list-inside lg:text-lg font-medium list-disc">
+                <li class="list-item">
+                    <a
+                        href="#spoken_language"
+                        class="text-blue-500 inline-flex gap-2"
+                    >
+                        <Languages /> Spoken Languages</a
+                    >
+                </li>
+                <li class="list-item">
+                    <a
+                        href="#project-public"
+                        class="text-blue-500 inline-flex gap-2"
+                    >
+                        <Lightbulb /> Public Projects</a
+                    >
+                </li>
+                <li class="list-item">
+                    <a
+                        href="#Languages"
+                        class="text-blue-500 inline-flex gap-2"
+                    >
+                        <Code2 /> XP/Technical Skills</a
+                    >
+                </li>
+                <li class="list-item">
+                    <a
+                        href="#Languages"
+                        class="text-blue-500 inline-flex gap-2"
+                    >
+                        <Brain /> Hobbies
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a
+                        href="#Languages"
+                        class="text-blue-500 inline-flex gap-2"
+                    >
+                        <Contact /> Contact</a
+                    >
+                </li>
+            </ol>
+        </div>
     </section>
+
+
+    <section id="spoken_language" class="grid lg:pt-16 pt-32 grid-cols-12">
+
+        <div class="lg:col-start-3 col-start-2 col-end-12 lg:col-end-11 ">
+            <div class=" border-b-2 py-2">
+                <h2 class="inline-flex text-2xl items-center font-medium gap-2"><Languages /> Spoken Language</h2>
+            </div>
+            <div class=" text-justify text-lg font-normal my-4">
+                <p>Being a fan of Western movies and series, I learned to speak and understand English fluently. I learned Arabic because I am Muslim and also learned Japanese from watching anime. Similarly, I learned basic Turkish by watching Turkish series.</p>
+                <ol class=" list-disc list-inside mt-6" >
+                    <li>English</li>
+                    <li>Arabic</li>
+                    <li>Japanese</li>
+                    <li>Urdu</li>
+                    <li>Turkish</li>
+                    <li>Hindi</li>
+                </ol>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="project-public" class="grid lg:pt-16 pt-8 grid-cols-12">
+
+        <div class="lg:col-start-3 col-start-2 col-end-12 lg:col-end-11 ">
+            <div class=" border-b-2 py-2">
+                <h2 class="inline-flex text-2xl items-center font-medium gap-2"><Lightbulb /> Public Project</h2>
+            </div>
+            <div class=" text-justify text-lg font-normal my-4">
+                <p>Stay tuned, more will follow</p>
+                <ol class=" list-disc list-inside mt-6" >
+                    <li ><div class="inline-flex  items-center gap-1">
+                        <a href="https://github.com/devahmedfarooq/git_automate" class="text-blue-500 font-medium">Git Automate</a> <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        class="group-hover:fill-black dark:group-hover:fill-[#eaecef] transition-all duration-150 ease-in-out fill-[#aeaeae]"
+                    >
+                        <path
+                            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"
+                        ></path>
+                    </svg>
+                    </div> - As every other developer, I too love Rust but I had one small problem. I didn't know Rust lang. So I decided to learn Rust by building small project such as <strong>Git Automate</strong>. This CLI tool basically shorten three git commands to one</li>
+                    
+                    
+                    <li ><div class="inline-flex  items-center gap-1">
+                        <a href="https://github.com/devahmedfarooq/anime_vault" class="text-blue-500 font-medium">Anime Vault</a> <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        class="group-hover:fill-black dark:group-hover:fill-[#eaecef] transition-all duration-150 ease-in-out fill-[#aeaeae]"
+                    >
+                        <path
+                            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"
+                        ></path>
+                    </svg>
+                    </div> - Being huge anime fan always wanted to build an anime website. When <strong>Next.js</strong> launched server action, I finally decided to build one. I used typescript, server action and tailwind. I used an free API and implemented infinte scroll</li>
+                    
+                    <li ><div class="inline-flex  items-center gap-1">
+                        <a href="https://github.com/devahmedfarooq/anime_vault" class="text-blue-500 font-medium">Kaboom.js Example</a> <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        class="group-hover:fill-black dark:group-hover:fill-[#eaecef] transition-all duration-150 ease-in-out fill-[#aeaeae]"
+                    >
+                        <path
+                            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"
+                        ></path>
+                    </svg>
+                    </div> - <strong>Angry Cheeku</strong> is a fun and addictive game inspired by the classic Flappy Bird, developed using Kaboom.js. In this game, players control Cheeku, a cute and feisty little cat, as they navigate through a series of obstacles in the form of branches. The objective is simple: keep Cheeku flying (I know cat's don't fly) for as long as possible while avoiding collisions with the pillars</li>
+                    
+
+                    <li ><div class="inline-flex  items-center gap-1">
+                        <a href="https://github.com/devahmedfarooq/MustCon" class="text-blue-500 font-medium">Event Website Template</a> <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        class="group-hover:fill-black dark:group-hover:fill-[#eaecef] transition-all duration-150 ease-in-out fill-[#aeaeae]"
+                    >
+                        <path
+                            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"
+                        ></path>
+                    </svg>
+                    </div> - Having to built a website for small university events is an struggle. I decided to build an Template using Next.js, Tailwind. The template was orignally built for 
+                
+                    <div class="inline-flex  items-center gap-1">
+                        <a href="https://must-con.vercel.app/" class="text-blue-500 font-medium">MustCon'24</a> <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        class="group-hover:fill-black dark:group-hover:fill-[#eaecef] transition-all duration-150 ease-in-out fill-[#aeaeae]"
+                    >
+                        <path
+                            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"
+                        ></path>
+                    </svg>
+                    </div>
+
+                </li>
+                
+                
+                </ol>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="hobbies" class="grid lg:pt-16 pt-32 grid-cols-12">
+
+        <div class="lg:col-start-3 col-start-2 col-end-12 lg:col-end-11 ">
+            <div class=" border-b-2 py-2">
+                <h2 class="inline-flex text-2xl items-center font-medium gap-2"><Brain /> Hobbies</h2>
+            </div>
+            <div class=" text-justify text-lg font-normal my-4">
+                <p>
+                    
+                    I enjoy watching anime 🎬, gaming 🎮, reading books on history 📚, philosophy 🧠, and personal development 📈. Recently, I've started going to the gym 💪 and I also enjoy sports like football ⚽, cricket 🏏, and badminton 🏸. Additionally, I like building small DIY projects in electronics, robotics 🤖, or tools using my tech skills 💡. Both reading and sports help me maintain a good work/life balance ⚖️, which is essential when working in IT 💻. Globally, I'm always keen to learn and find ways to further improve my skills and workflows 🌍, whether in my hobbies or at work.
+
+                </p>
+                
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="grid lg:pt-16 pt-32 grid-cols-12">
+
+        <div class="lg:col-start-3 col-start-2 col-end-12 lg:col-end-11 ">
+            <div class=" border-b-2 py-2">
+                <h2 class="inline-flex text-2xl items-center font-medium gap-2"><Contact /> Contact</h2>
+            </div>
+            <div class=" text-justify text-lg font-normal my-4">
+                <ol class=" list-disc list-inside mt-6" >
+                    <li ><div class="inline-flex  items-center gap-1">
+                        <a href="https://github.com/devahmedfarooq/" class="text-blue-500 font-medium">Github</a> <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        class="group-hover:fill-black dark:group-hover:fill-[#eaecef] transition-all duration-150 ease-in-out fill-[#aeaeae]"
+                    >
+                        <path
+                            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"
+                        ></path>
+                    </svg>
+                    </div>  </li>
+
+                    <li ><div class="inline-flex  items-center gap-1">
+                        <a href="https://pk.linkedin.com/in/ahmed-farooq-451949201" class="text-blue-500 font-medium">Linkedin</a> <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        class="group-hover:fill-black dark:group-hover:fill-[#eaecef] transition-all duration-150 ease-in-out fill-[#aeaeae]"
+                    >
+                        <path
+                            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"
+                        ></path>
+                    </svg>
+                    </div>  </li>
+
+                    <li ><div class="inline-flex group items-center gap-1">
+                        <a href="/resume-ahmed.pdf" target="_blank" download="resume-ahmed" class="text-blue-500 font-medium">Updated CV </a> 
+
+                        <span class="group-hover:stroke-black dark:group-hover:stroke-[#eaecef] transition-all duration-150 ease-in-out stroke-[#aeaeae] ">
+						
+							<svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="14" height="14" fill="none"  stroke-linecap="round" stroke-linejoin="round"  viewBox="0 0 24 24" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/.Layout.astro" data-astro-source-loc="23:17">  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/Download.astro" data-astro-source-loc="7:3"></path> <polyline points="7 10 12 15 17 10" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/Download.astro" data-astro-source-loc="8:3"></polyline> <line x1="12" x2="12" y1="15" y2="3" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/Download.astro" data-astro-source-loc="9:3"></line>  </svg>
+							
+						</span>
+
+                    </div>  </li>
+
+                    <li ><div class="inline-flex group items-center gap-1">
+
+                        Or you can contact me by sending an email to
+                        <a href="mailto:ahmedfarooq.dev@hotmail.com"  class="text-blue-500 "> this email address </a> 
+
+                        
+
+                    </div>  </li>
+                
+                   
+
+                </ol>
+
+            </div>
+        </div>
+
+    </section>
+    
 </Layout>
 
 <style></style>

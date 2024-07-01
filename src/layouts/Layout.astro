@@ -3,6 +3,9 @@ interface Props {
 	title: string;
 }
 
+import { Download } from "lucide-astro";
+
+
 const { title } = Astro.props;
 ---
 
@@ -29,7 +32,7 @@ const { title } = Astro.props;
 	</head>
 	<body class="dark:bg-[#25262b] relative dark:text-[#e2e1db]">
 		<header
-			class="border-b-2 sticky dark:bg-[#25262b] bg-white top-0 border-b-[#eaecef] dark:border-b-[#333434] items-center px-4 lg:px-8 py-2 flex flex-row justify-between"
+			class="border-b-2  sticky dark:bg-[#25262b] bg-white top-0 border-b-[#eaecef] dark:border-b-[#333434] items-center px-4 lg:px-8 py-2 flex flex-row justify-between"
 		>
 			<div>
 				<a href="#" class="text-2xl dark:text-white font-normal"
@@ -64,7 +67,7 @@ const { title } = Astro.props;
 						<a href="#" class="text-2xl">Portfolio</a>
 					</div>
 
-					<nav class="gap-2 px-4 flex flex-col">
+					<nav class="gap-2 px-4 py-4 flex border-b-2 flex-col">
 						<a
 							href="https://github.com/devahmedfarooq/"
 							target="_blank"
@@ -87,14 +90,22 @@ const { title } = Astro.props;
 							</svg>
 						</a>
 
-						<select
+						<!-- <select
 							class="py-2 dark:bg-[#333434] outline-none cursor-pointer"
 						>
 							<option>English</option>
 							<option>French</option>
 							<option>German</option>
 							<option>Arabic</option>
-						</select>
+						</select> -->
+
+						<a href="/resume-ahmed.pdf"  target="_blank" class="inline-flex group gap-2 items-center"download="Ahmed Farooq CV">Updated CV 
+					
+							<span class="group-hover:stroke-black dark:group-hover:stroke-[#eaecef] transition-all duration-150 ease-in-out stroke-[#aeaeae] ">
+						
+							<svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" fill="none"  stroke-linecap="round" stroke-linejoin="round"  viewBox="0 0 24 24" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/.Layout.astro" data-astro-source-loc="23:17">  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/Download.astro" data-astro-source-loc="7:3"></path> <polyline points="7 10 12 15 17 10" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/Download.astro" data-astro-source-loc="8:3"></polyline> <line x1="12" x2="12" y1="15" y2="3" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/Download.astro" data-astro-source-loc="9:3"></line>  </svg>
+							
+						</span></a>
 
 						<div>
 							<button
@@ -105,6 +116,21 @@ const { title } = Astro.props;
 							</button>
 						</div>
 					</nav>
+
+						<div id="table-of-content " class="flex flex-col gap-1 justify-start" >
+							
+							<h4 class="text-xl px-2 my-2">Home</h4>
+						
+							<a href="#spoken_language" class="px-4 border-l-4 rounded-r-lg border-l-blue-500 text-blue-500" >Spoken Languages</a>
+							<a href="#project-public" class="px-4 border-l-4 border-l-transparent" >Public Projects</a>
+							<a href="#" class="px-4 border-l-4 border-l-transparent" >XP/Technical Skills</a>
+							<a href="#" class="px-4 border-l-4 border-l-transparent" >Hobbies</a>
+							<a href="#" class="px-4 border-l-4 border-l-transparent" >Contact</a>
+						
+
+						</div>
+						
+					</div>
 				</div>
 			</div>
 
@@ -131,14 +157,22 @@ const { title } = Astro.props;
 					</svg>
 				</a>
 
-				<select
+				<!-- <select
 					class="p-2 dark:bg-[#25262b] outline-none cursor-pointer"
 				>
 					<option>English</option>
 					<option>French</option>
 					<option>German</option>
 					<option>Arabic</option>
-				</select>
+				</select> -->
+
+				<a href="/resume-ahmed.pdf"  target="_blank" class="inline-flex group gap-2 items-center"download="Ahmed Farooq CV">Updated CV 
+					
+					<span class="group-hover:stroke-black dark:group-hover:stroke-[#eaecef] transition-all duration-150 ease-in-out stroke-[#aeaeae] ">
+				
+					<svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" fill="none"  stroke-linecap="round" stroke-linejoin="round"  viewBox="0 0 24 24" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/.Layout.astro" data-astro-source-loc="23:17">  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/Download.astro" data-astro-source-loc="7:3"></path> <polyline points="7 10 12 15 17 10" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/Download.astro" data-astro-source-loc="8:3"></polyline> <line x1="12" x2="12" y1="15" y2="3" data-astro-source-file="D:/Work/Portfolio Video/portfolio/node_modules/lucide-astro/dist/Download.astro" data-astro-source-loc="9:3"></line>  </svg>
+					
+				</span></a>
 
 				<button
 					id="theme-toggle"
@@ -150,6 +184,21 @@ const { title } = Astro.props;
 		<slot />
 
 		<script>
+
+
+
+			/* $.fn.isInViewport = function() {
+				let elementTop = $(this).offset()?.top;
+			    let elementBottom = elementTop + $(this).outerHeight();
+			
+			    let viewportTop = $(window).scrollTop();
+			    let viewportBottom = viewportTop +( $(window).height()/2);
+			
+			    return elementBottom > viewportTop && elementTop < viewportBottom;
+			}; */
+
+
+
 			$("#theme-switch").on("click", function (e) {
 				const currentMode = window.localStorage.getItem("dark-mode");
 
@@ -202,6 +251,18 @@ const { title } = Astro.props;
 					$("html").removeClass("dark");
 				}
 			});
+
+
+			$(window).on('resize scroll', function() {
+   /*  if ($('#hobbies').isInViewport()) {
+        // do something
+		// alert("BLACK NEVER BACK")
+    } else {
+        // do something else
+    } */
+});
+
+
 		</script>
 	</body>
 </html>
